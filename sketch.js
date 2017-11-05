@@ -20,25 +20,25 @@ function setup() {
 
   fft = new p5.FFT();//FFT (Fast Fourier Transform快速傅里叶变换)
   mSong.connect(fft);
+  mSong.rate(1.1);
 
-
-  background(255,255,255,16);
+  background(255,255,255,20);
   mCanvas.mouseClicked(function(){
       if(mSong.isPlaying()==true){
           mSong.pause();
       }else{
           mSong.play();
-      }
+      } 
   });
 }
 
 function draw() {
 
-  background(10,0,0,30);
+  background(10,0,0,10);
   
   translate(width/2,height/2);
 
-  rotate(frameCount);
+  rotate(frameCount/4);
   
   
     
