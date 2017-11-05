@@ -28,13 +28,13 @@ function setup() {
           mSong.pause();
       }else{
           mSong.play();
-      } 
+      }
   });
 }
 
 function draw() {
 
-  background(10,0,0,10);
+  background(0,0,0,20);
   
   translate(width/2,height/2);
 
@@ -43,7 +43,7 @@ function draw() {
   
     
   var level = mAmplitude.getLevel(); 
-  var g = map(level,0,1,0,windowWidth/50);
+  var g = map(level,0,1,0,windowWidth/60);
   var waveform =fft.waveform();
   noFill();
   stroke(255);
@@ -73,13 +73,13 @@ function draw() {
   
 
   push();
-  // mImg.filter("threshold",0.3);
+ //mImg.filter("threshold",0.3);
   //mImg.filter("gray");
   image(mImg,-windowWidth/8,-windowWidth/8,windowWidth/4,windowWidth/4);
   pop();
   noFill();
   stroke(10);
-  strokeWeight(windowWidth/18);
+  strokeWeight(windowWidth/20);
   ellipse(0,0,windowWidth/4);
   // var level = mAmplitude.getLevel(); //在调用时返回单个幅度读数。对于连续读数，请在绘制循环中运行
   // var radius = map(level,0,1,windowWidth/6,width);
