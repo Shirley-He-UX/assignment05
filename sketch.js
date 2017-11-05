@@ -34,7 +34,7 @@ function setup() {
 
 function draw() {
 
-  background(0,0,0,20);
+  background(0,0,0,42);
   
   translate(width/2,height/2);
 
