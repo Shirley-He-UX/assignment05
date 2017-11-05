@@ -74,7 +74,7 @@ function draw() {
 
   push();
   // mImg.filter("threshold",0.3);
-  mImg.filter("gray");
+  //mImg.filter("gray");
   image(mImg,-windowWidth/8,-windowWidth/8,windowWidth/4,windowWidth/4);
   pop();
   noFill();
